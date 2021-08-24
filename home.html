@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="    viewport" content="width=device-width, initial-scale=1.0">
+
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js">
+
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js">
+
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js">
+
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+	 crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+	 crossorigin="anonymous">
+	</script>
+
+	<style>
+		body {
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-size: 150%;
+		}
+
+		.card {
+      display: inline-block;
+			height: 550px;
+			min-width: 450px;
+			margin-left: 40%;
+		}
+
+		.card img {
+			height: 50%;
+			width: 100%;
+		}
+
+		.card p {
+			height: 50%;
+		}
+
+		.card h5 {
+			font-weight: bold;
+		}
+
+		a {
+			text-decoration: none;
+			color: darkblue;
+			font-weight: bold;
+			align: center;
+		}
+
+		.navbar {
+			display: inline-block;
+      background-color: #0d6efd;
+		}
+
+		.navbar a {
+			font-size: 15px;
+			float: right;
+			margin-right: 25%;
+      color: black;
+		}
+      .inline{
+        display: inline;
+      }
+    h1{
+      display: inline-block;
+    }
+	</style>
+
+	<script src="form.js">
+
+	</script>
+	<title>WeCode | Home</title>
+	<link rel="shortcut icon" href="https://cdn.glitch.com/02ec556d-6c05-41e3-8bc3-9cd267042f76%2FUntitled%20(34).png?v=1629599589545">
+	<link href="style.css" rel="stylesheet" type="text/css" <body>
+	<!-- Nav bar -->
+	<div style="height:250px;background-color:white;font-size:36px;border-bottom: solid; padding-bottom: 20px;background-color:grey;">
+		<a href="home.html">
+			<img class = "roundimg" src = "https://cdn.glitch.com/02ec556d-6c05-41e3-8bc3-9cd267042f76%2FUntitled%20(34).png?v=1629599589545">
+    </a>
+    <button class = "navbar" style = "background-color: #0d6efd;">
+      <a href = "articles.html" style = "background-color: #0d6efd;">Articles </a>
+    </button>
+    <button class = "navbar" style = "background-color: #0d6efd;">
+      <a href = "videos.html" >Videos</a>
+    </button>
+    <button class = "navbar" style = "background-color: #0d6efd;">
+      <a href = "events.html">Events</a>
+    </button>
+    <button class = "navbar" style = "background-color: #0d6efd;">
+      <a href = "contact.html">Contact</a>
+    </button>
+    <button class = "navbar" style = "background-color: #0d6efd;">
+      <a href = "practice.html">Practice</a>
+    </button>
+     <button class = "navbar" style = "background-color: #0d6efd;">
+      <a href = "community_board_index.html">Discussions</a>
+    </button>
+    <button class = "navbar" style = "background-color: #0d6efd;">
+      <a href = "services.html">Services</a>
+    </button>
+    <div class="dropdown">
+		  <img src="https://cdn.glitch.com/02ec556d-6c05-41e3-8bc3-9cd267042f76%2F360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg?v=1629547565165">
+      <div class="dropdown-content">
+    <button>
+    <a href="profile.html">View profile</a> </button>
+    </button><button onclick="signOut()" id="signOut">SignOut</button>
+    
+  </div>
+    </div>
+  </div>
+    </div>
+    <br>
+    <br>
+    <h1 class = "inline">WeCode</h1>
+     </div>
+  </div>
+  </body>
+
+
+	<h1>Dashboard</h1>
+   <p> Welcome to your We Code dashboard. You can use the quick links below to use our online resourses! We<br> welcome you to contact us with any questions you have or to sign up for our free tutoring. </p>
+  </br>
+
+  <div id="events_container">
+
+    <div class="container">
+  <div class="row">
+    <div class="col-md-auto">
+      <div class="card" style="width: 18rem;">
+      <img src="https://images.pexels.com/photos/2385562/pexels-photo-2385562.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="...">
+      <div class="card-body">
+      <h5 class="card-title">Articles</h5>
+      <p class="card-text">Read our exclusive articles on coding for more than 5 langauges and take a quiz at the end of each one to test your knowledge.</p>
+      <a href="articles.html" class="btn btn-primary">Read Articles</a>
+  </div>
+  </div>
+  </div>
+    <div class="col-md-auto">
+       <div class="card" style="width: 18rem;">
+      <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+      <div class="card-body">
+      <h5 class="card-title">Practice</h5>
+      <p class="card-text">Generate new ideas for independent & group projects. We will use crazy 8's, storyboards, and figma during this 3 hour long workshop.</p>
+      <a href="practice.html" class="btn btn-primary">Practice</a>
+    </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="col-md-auto">
+       <div class="card" style="width: 18rem;">
+      <img src="https://images.pexels.com/photos/6325984/pexels-photo-6325984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+      <div class="card-body">
+      <h5 class="card-title">Join and create events</h5>
+      <p class="card-text">Join one of our free events like workshops and webinars or create your own event.</p>
+      <a href="events.html" class="btn btn-primary">Go to events</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-auto">
+       <div class="card" style="width: 18rem;">
+      <img src="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+      <div class="card-body">
+      <h5 class="card-title">Community Discussions</h5>
+      <p class="card-text">Join one of our community discussion threads to get help from your fellow We Coders in debugging your code or offer your expertise to others.</p>
+      <a href="community_board_index.html" class="btn btn-primary">Join a thread</a>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<br>
+  </br>
+  </br>
+  </br>
+
+
+</body>
+</html>

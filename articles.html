@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="    viewport" content="width=device-width, initial-scale=1.0">
+
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js">
+
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js">
+
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js">
+
+	</script>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+  <!-- Bootstrap Scripts -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+	 crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+	 crossorigin="anonymous">
+	</script>
+
+	<style>
+		body {
+			font-family: 'Open Sans Condensed', sans-serif;
+		}
+
+		.card {
+			height: 550px;
+			min-width: 300px;
+		}
+
+		.card img {
+			height: 50%;
+			width: 100%;
+		}
+
+		.card p {
+			height: 50%;
+		}
+
+		a {
+			text-decoration: none;
+			color: darkblue;
+			font-weight: bold;
+			font-size: 40%;
+			align: center;
+		}
+
+		}
+
+		.card h5 {
+			font-weight: bold;
+		}
+
+		h5 {
+			font-weight: bold;
+		}
+
+		.navbar {
+			display: inline-block;
+		}
+
+		.navbar a {
+			font-size: 15px;
+			float: right;
+			margin-right: 25%;
+		}
+	</style>
+
+	<script src="form.js">
+
+	</script>
+	<title>WeCode | Articles</title>
+	<link rel="shortcut icon" href="https://cdn.glitch.com/02ec556d-6c05-41e3-8bc3-9cd267042f76%2FUntitled%20(34).png?v=1629599589545">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<!-- Nav bar -->
+	<div style="height:250px;background-color:white;font-size:36px;border-bottom: solid; padding-bottom: 20px;background-color:grey;">
+		<a href="home.html">
+			<img class = "roundimg" src = "https://cdn.glitch.com/02ec556d-6c05-41e3-8bc3-9cd267042f76%2FUntitled%20(34).png?v=1629599589545">
+    </a>
+    <button class = "navbar">
+      <a href = "articles.html">Articles </a>
+    </button>
+    <button class = "navbar">
+      <a href = "videos.html">Videos</a>
+    </button>
+    <button class = "navbar">
+      <a href = "events.html">Events</a>
+    </button>
+    <button class = "navbar">
+      <a href = "contact.html">Contact</a>
+    </button>
+    <button class = "navbar">
+      <a href = "practice.html">Practice</a>
+    </button>
+     <button class = "navbar">
+      <a href = "community_board_index.html">Discussions</a>
+    </button>
+    <button class = "navbar">
+      <a href = "services.html">Services</a>
+    </button>
+    <div class = "dropdown">
+		  <img src = "https://cdn.glitch.com/02ec556d-6c05-41e3-8bc3-9cd267042f76%2F360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg?v=1629547565165">
+      <div class="dropdown-content">
+    <button>
+    <a href="profile.html">View profile</a> </button>
+    <button onclick="signOut()" id="signOut">SignOut</button>
+    
+  </div>
+    </div>
+    <br>
+    <br>
+    <h1>WeCode</h1>
+  </div>
+<body>
+
+	<h1>Articles</h1>
+  </br>
+
+  <div id="events_container">
+
+    <div class="container">
+  <div class="row">
+    <div class="col-md-auto">
+      <div class="card" style="width: 18rem;">
+      <img src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+      <div class="card-body">
+      <h5 class="card-title">Introduction to HTML</h5>
+      <p class="card-text">Learn the basics of JavaScript through a virtual 2 hour session. No prior experience required. Event open to all ages.</p>
+      <a href="https://code-next-hackathon.isabellaschell.repl.co/Articles/introHTML.html" class="btn btn-primary">Read Article</a>
+  </div>
+  </div>
+  </div>
+    <div class="col-md-auto">
+      <div class="card" style="width: 18rem;">
+      <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 class="card-img-top" alt="...">
+      <div class="card-body">
+      <h5 class="card-title">Introduction to CSS</h5>
+      <p class="card-text">Learn the basics of JavaScript through a virtual 2 hour session. No prior experience required. Event open to all ages.</p>
+      <a href="Articles/IntroCSS.html" class="btn btn-primary">Read Article</a>
+  </div>
+  </div>
+  </div>
+    <div class="col-md-auto">
+      <div class="card" style="width: 18rem;">
+      <img src="https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+      <div class="card-body">
+      <h5 class="card-title">Introduction to JavaScript</h5>
+      <p class="card-text">Learn the basics of JavaScript through a virtual 2 hour session. No prior experience required. Event open to all ages.</p>
+      <a href="Articles/IntroJS.html" class="btn btn-primary">Read Article</a>
+  </div>
+  </div>
+  </div>
+    <div class="col-md-auto">
+       <div class="card" style="width: 18rem;">
+      <img src="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+      <div class="card-body">
+      <h5 class="card-title">Introduction to Python</h5>
+      <p class="card-text">Generate new ideas for independent & group projects. We will use crazy 8's, storyboards, and figma during this 3 hour long workshop.</p>
+      <a href="Articles/introPython.html" class="btn btn-primary">Read Article</a>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-auto">
+       <div class="card" style="width: 18rem;">
+      <img src="https://images.pexels.com/photos/965345/pexels-photo-965345.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+      <div class="card-body">
+      <h5 class="card-title">Introduction to Java</h5>
+      <p class="card-text">Learn the basics of programming with python in this virtual 2 hour session. No prior experience required. Event open to all ages.</p>
+      <a href="Articles/IntroJava.html" class="btn btn-primary">Read Article</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-auto">
+       <div class="card" style="width: 18rem;">
+      <img src="https://images.pexels.com/photos/330771/pexels-photo-330771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+      <div class="card-body">
+      <h5 class="card-title">Introduction to C# </h5>
+      <p class="card-text">Join us for a pannel where 5 different googlers will explain their career pathways, different non-technical careers, and why you should work for Google.</p>
+      <a href="Articles/introC#.html" class="btn btn-primary">Read Article</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+  </br>
+  </br>
+  </br>
+
+
+</body>
+
+</html>

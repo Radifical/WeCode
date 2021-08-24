@@ -1,0 +1,26 @@
+body{
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: darkblue;
+  font-weight: bold;
+}
+
+/* Styling for nave bar */
+.navbar{
+  float: right;
+  background-color: purple;
+  height: 30px;
+  width: 80px;
+}
+
+/* Styling for the logo in top left */
+.roundimg {
+  border-radius: 50%;
+  width: 7%;
+  height: 7%;
+  margin-left: 5px;
+  float: left;
+}

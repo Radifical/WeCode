@@ -1,0 +1,30 @@
+body{
+  text-align: left;
+}
+
+a{
+  text-decoration: none;
+  color: darkblue;
+  font-weight: bold;
+}
+
+/* Makes the article posts be inline */
+.article{
+  float: left;
+  display: inline;
+  width: 33%;
+}
+
+/* footer */
+.bottom {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: black;
+   text-align: center;
+}
+
+footer{
+  text-align: center;
+}

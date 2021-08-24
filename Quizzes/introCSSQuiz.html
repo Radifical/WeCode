@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Intro to CSS Quiz</title>
+	<link href="quiz.css" rel="stylesheet" type="text/css" />
+	<script src="quiz.js" defer>
+	</script>
+</head>
+
+<body>
+	<!-- Nav bar -->
+	<div style="height:200px;background-color:white;font-size:36px;border-bottom: solid; padding-bottom: 20px;background-color:grey;">
+		<a href="https://code-next-hackathon.isabellaschell.repl.co/home.html">
+			<img class = "roundimg" src = "https://cdn.glitch.com/02ec556d-6c05-41e3-8bc3-9cd267042f76%2FUntitled%20(34).png?v=1629599589545">
+    </a>
+    <button class = "navbar">
+      <a href = "https://code-next-hackathon.isabellaschell.repl.co/articles.html">Articles </a>
+    </button>
+    <button class = "navbar">
+      <a href = "https://code-next-hackathon.isabellaschell.repl.co/videos.html">Videos</a>
+    </button>
+    <button class = "navbar">
+      <a href = "https://code-next-hackathon.isabellaschell.repl.co/events.html">Events</a>
+    </button>
+    <button class = "navbar">
+      <a href = "https://code-next-hackathon.isabellaschell.repl.co/contact.html">Contact</a>
+    </button>
+    <button class = "navbar">
+      <a href = "https://code-next-hackathon.isabellaschell.repl.co/practice.html">Practice</a>
+    </button>
+     <button class = "navbar">
+      <a href = "https://code-next-hackathon.isabellaschell.repl.co/community_board_index.html">Discussions</a>
+    </button>
+    <button class = "navbar">
+      <a href = "https://code-next-hackathon.isabellaschell.repl.co/services.html">Services</a>
+    </button>
+    <div class = "dropdown">
+		  <img src = "https://cdn.glitch.com/02ec556d-6c05-41e3-8bc3-9cd267042f76%2F360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg?v=1629547565165">
+      <div class="dropdown-content">
+    <button>
+    <a href="https://code-next-hackathon.isabellaschell.repl.co/profile.html">View profile</a>
+    <button onclick="signOut()" id="signOut">SignOut</button>
+    </button>
+  </div>
+    </div>
+    <br>
+    <br>
+    <h1>WeCode</h1>
+     </div>
+    <h1>Intro to CSS Quiz</h1>
+
+    <h2>What does CSS stand for?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <br />
+        <button id="q1a1">Cascading Style Sheets</button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q1a2">Canned Soda Sizzle</button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q1a3">Cascading Styling Sheets</button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q1a4">It doesn't stand for anything</button>
+      </div>
+    </div>
+
+    <h2>Which of following should you write to style the whole page?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <br />
+        <button id="q2a1">b{}</button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q2a2">body{}</button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q2a3">whole{}</button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q2a4">br{}</button>
+      </div>
+    </div>
+
+    <h2>How do edit text color?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <br />
+        <button id="q3a1">text-color:</button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q3a2">color:</button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q3a3">background-color:</button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q3a4">text:</button>
+      </div>
+    </div>
+    <h2>How do you write CSS in your HTML document?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <img
+          src=""
+        />
+        <br />
+        <button id="q4a1">Use style tags</button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q4a2">Use script tags</button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q4a3">Use css tags</button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q4a4">Just write the CSS</button>
+      </div>
+    </div>
+    <h2>How do you change the height of an image to 100 pixels?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <br />
+        <button id="q5a1">img{height:100pixels;}</button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q5a2">image{height:100px;}</button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q5a3">img{height:100px;}</button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q5a4">img{height:100p;}</button>
+      </div>
+    </div>
+    <h2>How do you change the color of the webpage to pink?</h2>
+    <div class="question">
+      <div class="answer-choice">
+        <br />
+        <button id="q6a1">body{background-color: pink;}</button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q6a2">body{color: pink;}</button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q6a3">b{background-color: pink;}</button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q6a4">body{pink;}</button>
+      </div>
+    </div>
+
+    <div class="result">
+      <h2 id="result">Your result is...</h2>
+    </div>
+  </body>
+</html>

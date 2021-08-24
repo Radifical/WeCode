@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="    viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js">
+
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js">
+
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js">
+
+	</script>
+	</script>
+	<script src="form.js">
+
+	</script>
+ <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+	 crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+	 crossorigin="anonymous">
+	</script>
+
+	<title>WeCode | Videos</title>
+	<link rel="shortcut icon" href="https://cdn.glitch.com/02ec556d-6c05-41e3-8bc3-9cd267042f76%2FUntitled%20(34).png?v=1629599589545">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+	<style>
+		body {
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-size: 150%;
+		}
+
+		.navbar {
+			display: inline-block;
+			font-family: 'Open Sans Condensed', sans-serif;
+		}
+
+		.navbar {
+			display: inline-block;
+		}
+
+		.navbar a {
+			font-size: 15px;
+			float: right;
+			margin-right: 25%;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Nav bar -->
+	<div style="height:250px;background-color:white;font-size:36px;border-bottom: solid; padding-bottom: 20px;background-color:grey;">
+		<a href="home.html">
+			<img class = "roundimg" src = "https://cdn.glitch.com/02ec556d-6c05-41e3-8bc3-9cd267042f76%2FUntitled%20(34).png?v=1629599589545">
+    </a>
+    <button class = "navbar">
+      <a href = "articles.html">Articles </a>
+    </button>
+    <button class = "navbar">
+      <a href = "videos.html">Videos</a>
+    </button>
+    <button class = "navbar">
+      <a href = "events.html">Events</a>
+    </button>
+    <button class = "navbar">
+      <a href = "contact.html">Contact</a>
+    </button>
+    <button class = "navbar">
+      <a href = "practice.html">Practice</a>
+    </button>
+     <button class = "navbar">
+      <a href = "community_board_index.html">Discussions</a>
+    </button>
+    <button class = "navbar">
+      <a href = "services.html">Services</a>
+    </button>
+    <div class = "dropdown">
+		  <img src = "https://cdn.glitch.com/02ec556d-6c05-41e3-8bc3-9cd267042f76%2F360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg?v=1629547565165">
+      <div class="dropdown-content">
+    <button>
+    <a href="profile.html">View profile</a>
+    <button onclick="signOut()" id="signOut">SignOut</button>
+    </button>
+  </div>
+    </div>
+    <br>
+    <br>
+    <h1>WeCode</h1>
+  </div>
+
+  <!-- Website content -->
+  <h1>
+    Web Development: HTML, CSS, and Javascript
+  </h1>
+
+  <!-- Web development videos -->
+  <div class = "videos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_GTMOmRrqkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class = "videos">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <h1>
+    Python
+  </h1>
+  <!-- Python videos -->
+  <div class = "videos">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class = "videos">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kqtD5dpn9C8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <h1>
+    Java
+  </h1>
+  <!-- Java videos -->
+  <div class = "videos">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GoXwIVyNvX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class = "videos">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eIrMbAQSU34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <h1>
+    C#
+  </h1>
+  <!-- C# Videos -->
+  <div class = "videos">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GhQdlIFylQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class = "videos">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gfkTfcpWqAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</body>
+</html>
